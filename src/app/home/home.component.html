@@ -1,0 +1,13 @@
+<main *ngIf="minhaPagina$ | async as minhaPagina">
+    <pre>
+        {{minhaPagina | json}}
+    </pre>
+
+    <!--
+     <div *ngFor="let minhaPag of minhaPagina.items">
+        <h3>{{minhaPag.fields.titulo}}</h3>
+        <h3>{{minhaPag.fields.descricao}}</h3>
+        <img [src]="minhaPag.fields.img.fields.file.url">
+     </div>
+     -->
+</main>
